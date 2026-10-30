@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header class="header">
+        <h3>Tugas 3</h3>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <div class="judul">
+                <h3>Manajemen Data Siswa</h3>
+                <p>Formulir Biodata</p>
+            </div>
+
+            <form action="#" method="POST" class="form-biodata">
+
+                <h4>Form Biodata</h4>
+
+                <!-- Tambahan: Nama -->
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama"
+                        placeholder="Masukkan Nama Lengkap" required>
+                </div>
+
+                <!-- Tambahan: NIM -->
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim"
+                        placeholder="Masukkan NIM" required>
+                </div>
+
+                <!-- Kode jurusan tetap dipertahankan -->
+                <div class="form-group">
+                    <label for="jurusan">Jurusan:</label>
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Manajemen">Manajemen</option>
+                    </select>
+                </div>
+
+                <!-- Tambahan: Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Masukkan Email" required>
+                </div>
+
+                <!-- Tambahan: Jenis Kelamin -->
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="jenis_kelamin"
+                                value="Laki-laki" required>
+                            Laki-laki
+                        </label>
+
+                        <label>
+                            <input type="radio" name="jenis_kelamin"
+                                value="Perempuan">
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Kode alamat tetap dipertahankan -->
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" rows="4"
+                        placeholder="Masukkan Alamat Lengkap"
+                        required></textarea>
+                </div>
+
+                <!-- Tombol tetap dipertahankan -->
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">
+                        Kirim Data
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
+```

@@ -1,0 +1,130 @@
+
+/* Pengaturan dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(133, 42, 42);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header pertama - Tugas 3 */
+header {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
+    font-size: 30px;
+}
+
+/* Bagian utama berwarna cokelat */
+.main-content {
+    background: rgb(133, 42, 42);
+    min-height: calc(100vh - 170px);
+    padding: 30px;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Judul halaman */
+.judul h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.judul p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Form Biodata */
+.form-biodata {
+    margin-top: 20px;
+}
+
+.form-biodata h4 {
+    font-size: 22px;
+    border-bottom: 2px solid #dedede;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* Mengatur setiap baris form */
+.form-group {
+    display: grid;
+    grid-template-columns: 160px 320px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Label */
+.form-group > label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Input dan pilihan */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    height: 38px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Jenis kelamin */
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+}
+
+.gender input {
+    width: 17px;
+    height: 17px;
+}
+
+/* Alamat */
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Tombol kirim */
+.btn-submit {
+    grid-column: 2;
+    width: 130px;
+    padding: 10px;
+    background: #1abc9c;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #16a085;
+}
